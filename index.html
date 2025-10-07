@@ -11,6 +11,8 @@ Select ONE Additional Feature to Add
 [ no ] Feature 3 - Include An Animated Background Color Change
 [ no ] Feature 4 - Embed YouTube Video 
 [ no ] Feature 5 - Include Border CSS Property 
+
+[ no ]I added a static background, and rounded the image borders to give the page a futuristic look. 
 -->
     
 <!DOCTYPE HTML>
@@ -26,10 +28,24 @@ Select ONE Additional Feature to Add
                 background-repeat: no-repeat;
             }
 
-            img{
+            #LongImage{
                 border-radius: 30px;
                 height: 350px;
                 width: 490px;
+            }
+
+            #VertImage{
+                border-radius: 30px;
+                height: 350px;
+                width: 270px;
+            }
+
+            .bright{
+                color:cyan;
+            }
+
+            .danger{
+                color:red;
             }
 
             h1{
@@ -51,9 +67,9 @@ Select ONE Additional Feature to Add
     </head>
     <body>
         <h1>Plan your getaway to The Moon today!</h1>
-        <p>Here, we don't call it the moon - we call it 'home.'</p>
+        <p>Here, we don't call it the moon - we call it <strong class="bright"><em>'home.'</em></strong></p>
         
-        <img src="https://m.media-amazon.com/images/I/71dNtlbI7fL._UF1000,1000_QL80_.jpg">
+        <img id="LongImage" src="https://m.media-amazon.com/images/I/71dNtlbI7fL._UF1000,1000_QL80_.jpg">
 
         <ul>
             <li>Crater-side lodging: Enjoy a rustic stay in nature's potholes.</li>
@@ -63,17 +79,20 @@ Select ONE Additional Feature to Add
 
         <h2>Activities</h2>
         <ul>
-            <li>Enjoy endless grey Landscapes: All the charm of a best buy parking lot, but like a lot colder.</li>
+            <li>Enjoy endless grey Landscapes: All the charm of a best buy parking lot, but like <strong class= "bright">a lot colder.</strong></li>
             <li>Enjoy the georgous view of the moon: Remind yourself of the life you left behind.</li>
             <li>Silent discos: No music. Or other people.</li>
         </ul>
+
+        <img id="VertImage" src="https://i.natgeofe.com/k/082b37d7-d83c-4033-886e-b081fa4fa0f2/moon_3x4.jpg">
 
         <h2>Perks</h2>
         <ol>
             <li>Complimentary radiation exposure</li>
             <li>Souvenir vacuum-sealed despair</li>
-            <li>No Refunds.</li>
+            <li><strong class= "danger"><em>No Refunds.</em></strong></li>
         </ol>
 
+        <img id="LongImage" src="https://c02.purpledshub.com/uploads/sites/41/2022/05/Astronauts-Moon-base-thumbnail-f9259f4.jpg">
     </body>
 </html>
